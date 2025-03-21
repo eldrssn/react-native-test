@@ -7,15 +7,6 @@ import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Index() {
-  useEffect(() => {
-    const fetch = async () => {
-      const matches = await fetchMatches();
-      console.log('matches', matches);
-    };
-
-    fetch();
-  }, []);
-
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
@@ -28,7 +19,6 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
     justifyContent: 'center',
     alignItems: 'center',
     borderStyle: 'solid',

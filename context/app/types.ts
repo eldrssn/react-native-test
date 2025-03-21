@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
-
-import { Match } from '@models';
+import { Match } from '@/models';
 
 export interface AppContextType {
   matches: Match[];

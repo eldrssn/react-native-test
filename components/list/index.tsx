@@ -1,17 +1,24 @@
+import { View, Text, ScrollView, FlatList } from 'react-native';
 import { useAppContext } from '@/hooks/use-app-context';
 import { useMatches } from '@/hooks/use-matches';
-import { View, Text, ScrollView } from 'react-native';
+import { Match } from '@/models';
 import { styles } from './styles';
 import { ListItem } from '../list-item';
+
+const renderItem = ({ item }: { item: Match }) => <ListItem item={item} />;
 
 export const List = () => {
   const { matches } = useAppContext();
   const { isFetching, isLoading } = useMatches();
 
   return (
-    <ScrollView style={[styles.section, isFetching && styles.section_blurred]}>
-      {!isLoading &&
-        matches.map((item, index) => <ListItem item={item} key={index} />)}
+    <View style={[styles.section, isFetching && styles.section_blurred]}>
+      <FlatList
+        data={matches}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.title}
+        windowSize={7}
+      />
 
       {!isLoading && !matches.length && (
         <View style={styles.infoBox}>
@@ -26,6 +33,6 @@ export const List = () => {
           <Text style={styles.infoText}>Загрузка...</Text>
         </View>
       )}
-    </ScrollView>
+    </View>
   );
 };
