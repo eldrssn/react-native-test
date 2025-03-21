@@ -1,7 +1,10 @@
 import { fetchMatches } from '@/api';
 import { Header } from '@/components/header';
+import { List } from '@/components/list';
+import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Index() {
   useEffect(() => {
@@ -14,27 +17,22 @@ export default function Index() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      {/* <Text style={styles.text}>Hello world!</Text> */}
+    <SafeAreaView style={styles.container}>
+      <StatusBar style="light" />
       <Header />
-    </View>
+      <List />
+    </SafeAreaView>
   );
 }
-
-// padding: 53px 42px;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
     justifyContent: 'center',
     alignItems: 'center',
     borderStyle: 'solid',
     padding: 16,
-    // borderColor: 'red',
-    // borderWidth: 4,
     backgroundColor: '#06080c',
   },
   text: {
