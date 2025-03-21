@@ -6,6 +6,7 @@ export const useCustomFonts = () => {
     'Inter-Bold': require('../assets/fonts/Inter-Bold.ttf'),
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
     'Inter-SemiBold': require('../assets/fonts/Inter-SemiBold.ttf'),
+    'TacticSans-BlkIt': require('../assets/fonts/TacticSans-BlkIt.ttf'),
   });
 
   return fontsLoaded;

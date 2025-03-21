@@ -21,12 +21,18 @@ export default function Index() {
   );
 }
 
+// padding: 53px 42px;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     borderStyle: 'solid',
+    padding: 16,
     // borderColor: 'red',
     // borderWidth: 4,
     backgroundColor: '#06080c',
