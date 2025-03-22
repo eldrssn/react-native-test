@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   content: {
     width: '100%',
-    marginTop: 16,
   },
   players: {
     flexDirection: 'row',
@@ -38,7 +37,7 @@ export const styles = StyleSheet.create({
   player_img: {
     width: 32,
     height: 32,
-    marginLeft: 8,
+    marginRight: 4,
   },
   player_score: {
     flexDirection: 'row',

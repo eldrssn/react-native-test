@@ -13,5 +13,9 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+    transform: [{ rotate: '0deg' }],
+  },
+  button_opened: {
+    transform: [{ rotate: '180deg' }],
   },
 });
