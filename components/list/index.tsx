@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, FlatList } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { useAppContext } from '@/hooks/use-app-context';
 import { useMatches } from '@/hooks/use-matches';
 import { Match } from '@/models';
