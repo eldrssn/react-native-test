@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 20,
   },
   header_title: {
     fontFamily: 'TacticSans-BlkIt',

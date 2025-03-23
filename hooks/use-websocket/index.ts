@@ -3,7 +3,10 @@ import { websocketClient } from '@/api/websocket-client';
 
 type WebSocketMessage = { data: unknown };
 
-export const useWebSocket = (onMessage: (data: unknown) => void) => {
+export const useWebSocket = (
+  onMessage: (data: unknown) => void,
+  deps: unknown[] = [],
+) => {
   useEffect(() => {
     websocketClient.connect();
 
@@ -18,5 +21,5 @@ export const useWebSocket = (onMessage: (data: unknown) => void) => {
     return () => {
       websocketClient.disconnect();
     };
-  }, []);
+  }, deps);
 };

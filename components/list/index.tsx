@@ -18,21 +18,16 @@ export const List = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item.title}
         windowSize={7}
+        ListEmptyComponent={
+          <View style={styles.infoBox}>
+            <Text style={styles.infoText}>
+              {isLoading
+                ? 'Загрузка...'
+                : ' Матчи отсутствуют, попробуйте позже'}
+            </Text>
+          </View>
+        }
       />
-
-      {!isLoading && !matches.length && (
-        <View style={styles.infoBox}>
-          <Text style={styles.infoText}>
-            Матчи отсутствуют, попробуйте позже
-          </Text>
-        </View>
-      )}
-
-      {isLoading && (
-        <View style={styles.infoBox}>
-          <Text style={styles.infoText}>Загрузка...</Text>
-        </View>
-      )}
     </View>
   );
 };

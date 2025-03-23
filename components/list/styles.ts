@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   section: {
     display: 'flex',
     flex: 1,
+    paddingHorizontal: 8,
   },
   section_blurred: { opacity: 0.4 },
   infoBox: {
@@ -12,6 +13,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   infoText: {
-    margin: 'auto',
+    // margin: 'auto',
+    color: 'white',
   },
 });

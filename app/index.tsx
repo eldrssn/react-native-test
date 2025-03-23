@@ -1,5 +1,6 @@
 import { Header } from '@/components/header';
 import { List } from '@/components/list';
+import StatusSelect from '@/components/status-select';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet } from 'react-native';
@@ -10,6 +11,7 @@ export default function Index() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
       <Header />
+      <StatusSelect />
       <List />
     </SafeAreaView>
   );
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderStyle: 'solid',
-    padding: 16,
+    paddingVertical: 16,
     backgroundColor: '#06080c',
   },
   text: {
