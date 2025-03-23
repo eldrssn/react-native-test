@@ -33,11 +33,18 @@ export const styles = StyleSheet.create({
     height: 44,
   },
   score: {
+    marginBottom: 4,
+    flexDirection: 'row',
+    overflow: 'hidden',
+  },
+  score_value: {
     fontFamily: 'Inter',
     fontWeight: 600,
     fontSize: 14,
     color: '#fff',
-    marginBottom: 4,
+  },
+  score_divider: {
+    paddingHorizontal: 4,
   },
   status: {
     borderRadius: 4,
