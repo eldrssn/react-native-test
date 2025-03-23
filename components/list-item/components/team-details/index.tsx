@@ -36,6 +36,7 @@ export const TeamDetails: FC<PropsType> = ({ team }) => {
         <View style={styles.general_list}>
           {generalTeamContent.map(({ name, value }, i, arr) => (
             <View
+              key={name}
               style={[
                 styles.general_item,
                 i === arr.length - 1 && styles.general_item_last,

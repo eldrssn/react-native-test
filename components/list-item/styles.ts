@@ -18,4 +18,5 @@ export const styles = StyleSheet.create({
   button_opened: {
     transform: [{ rotate: '180deg' }],
   },
+  hiddenContent: { position: 'absolute', width: '100%' },
 });
