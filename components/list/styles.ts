@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   infoText: {
-    // margin: 'auto',
     color: 'white',
   },
 });

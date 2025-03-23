@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     position: 'relative',
-    marginHorizontal: 8,
+    paddingHorizontal: 8,
     marginBottom: 32,
   },
 
@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
     color: '#b4b5b6',
   },
   optionsList: {
+    marginHorizontal: 8,
     position: 'absolute',
     top: '100%',
     left: 0,

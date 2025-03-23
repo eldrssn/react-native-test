@@ -21,8 +21,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderStyle: 'solid',
-    paddingVertical: 16,
+    paddingTop: 16,
     backgroundColor: '#06080c',
+    marginBottom: -34,
   },
   text: {
     color: 'black',
